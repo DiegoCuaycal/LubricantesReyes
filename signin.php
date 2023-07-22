@@ -1,5 +1,5 @@
 <?php
-// Variables para controlar el resultado del formulario
+
 $mensaje = "";
 $error = false;
 
