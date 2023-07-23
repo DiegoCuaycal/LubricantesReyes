@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" />
 </head>
+
 <body>
-    <h2>Iniciar sesión</h2>
-    <form action="login.php" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre de usuario" required><br>
-        <input type="password" name="contraseña" placeholder="contraseña" required><br>
-        <input type="submit" value="Iniciar sesión">
-    </form> 
+
+    <div id="datos">
+        <h2>Iniciar sesión</h2>
+        <form action="../php/login.php" method="POST">
+            <div id="ingreso">
+                <label>Nombre: </label> <input type="text" id="input1" name="nombre" placeholder="Nombre de usuario"
+                    required><br>
+                <label id="label2">Contraseña: </label><input type="password" id="input2" name="contraseña" placeholder="contraseña"
+                    required><br>
+            </div>
+            <input type="submit" id="input3" value="Iniciar sesión">
+            <a href="./signin.html" id="signin">Crear una cuenta</a>
+        </form>
+        <div id="logo"></div>
+    </div>
 </body>
+
 </html>
