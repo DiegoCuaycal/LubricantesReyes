@@ -10,7 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: FFFFFF;
 }
 
 .container {
@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  color: blue;
+  color: #61bc00;
   font-size: 25px;
   font-weight: 800;
 }
@@ -48,13 +48,13 @@ body {
 .menu .navbar ul li a {
   font-size: 18px;
   padding: 20px;
-  color: black;
+  color: #303030;
   display: block;
   font-weight: 600;
 }
 
 .menu .navbar ul li a:hover {
-  color: cadetblue;
+  color: #e85123;
 }
 
 #menu {
@@ -85,7 +85,7 @@ body {
   backdrop-filter: blur(10px);
   top: 100%;
   z-index: 1;
-  background-color: #4e4b5076;
+  background-color: aliceblue;
   padding: 20px;
   min-width: 400px;
   min-width: 400px;
@@ -96,10 +96,11 @@ table {
 }
 
 th {
-  color: #dfdde0;
+  color: #303030;
 }
+
 td {
-  color: #dfdde0;
+  color: #303030;
 }
 
 .borrar {
@@ -119,7 +120,7 @@ td {
 
 .header-content h1 {
   font-size: 70px;
-  color: black;
+  color: #303030;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -127,7 +128,7 @@ td {
 .header-content p {
   font-size: 18px;
   padding: 0 200px;
-  color: #8b7e7b;
+  color: #303030;
   margin-bottom: 80px;
 }
 
@@ -148,7 +149,7 @@ td {
 }
 
 .btn-1:hover {
-  background-color: black;
+  background-color: #e85123;
 }
 
 .socials-1 {
@@ -182,11 +183,11 @@ td {
 
 .lubricantes-1 h3 {
   font-size: 18px;
-  color: aliceblue;
+  color: #303030;
 }
 
 .lubricantes-1 p {
-  color: #e45d34;
+  color: #303030;
 }
 
 .lubricantes-1 hr {
@@ -202,7 +203,7 @@ td {
 .lubricantes-2 h2 {
   font-size: 55px;
   line-height: 55px;
-  color: #dfdde0;
+  color: #303030;
 }
 
 .elementos {
@@ -236,7 +237,7 @@ td {
 }
 
 .swiper-pagination-bullet {
-  background-color: aliceblue;
+  background-color: #dfdde0;
   opacity: 1;
   top: 50px;
 }
@@ -254,7 +255,7 @@ td {
 
 .elemento h3 {
   font-size: 16px;
-  color: #dfdde0;
+  color: #303030;
   margin-bottom: 10px;
 }
 
@@ -269,7 +270,7 @@ td {
 
 .elemento p {
   font-size: 16px;
-  color: #dfdde0;
+  color: #303030;
   margin-top: 15px;
 }
 
@@ -289,16 +290,17 @@ td {
 
 .c1,
 .c2 {
-  color: #8d7e7b !important;
+  color: #303030 !important;
 }
 
 .btn-3 {
   display: inline-block;
-  color: #dfdde0;
+  color: #303030;
   padding: 8px 15px;
+  background-color: #e85123;
   border-radius: 25px;
   margin-top: 25px;
-  border: 1px solid #dfdde0;
+  border: 1px solid #e45d34;
 }
 
 .btn-3:hover {
@@ -324,8 +326,9 @@ td {
   color: #312f32;
   margin-bottom: 20px;
 }
+
 .link p {
-  color: #8d7e7b;
+  color: #303030;
   font-size: 14px;
   margin: 0 50px 15px 0;
 }
@@ -333,7 +336,7 @@ td {
 .link ul li a {
   display: inline-block;
   font-size: 16px;
-  color: #dfdde0;
+  color: #303030;
   margin-bottom: 10px;
 }
 
@@ -346,6 +349,7 @@ td {
   display: flex;
   flex-direction: column;
 }
+
 .inp {
   margin-bottom: 15px;
   padding: 8px 15px;
@@ -365,9 +369,11 @@ td {
   .menu {
     padding: 30px;
   }
+
   .menu label {
     display: initial;
   }
+
   .menu .navbar {
     position: absolute;
     top: 100%;
@@ -380,12 +386,15 @@ td {
   .logo {
     display: none;
   }
+
   .menu .navbar ul li {
     width: 100%;
   }
-  #menu:checked ~ .navbar {
+
+  #menu:checked~.navbar {
     display: initial;
   }
+
   .header-content {
     flex-direction: column;
     padding: 30px;
@@ -405,15 +414,19 @@ td {
     flex-direction: column;
     align-items: center;
   }
+
   .btn-1 {
     margin: 0 0 20px 0;
   }
+
   .socials-1 {
     display: none;
   }
+
   .arrow {
     display: none;
   }
+
   .lubricantes {
     flex-direction: column;
     padding: 0px 30px;
@@ -432,17 +445,21 @@ td {
   .footer {
     padding: 30px;
   }
+
   .links {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .link {
     width: 70%;
   }
+
   .link p {
     margin: 0 0 25px 0;
   }
+
   .socials-2 {
     margin-bottom: 15px;
   }
