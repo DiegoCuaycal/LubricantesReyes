@@ -9,6 +9,8 @@ if(isset($_GET['deleteid'])){
     $result=mysqli_query($con,$sql);
     if($result){
         echo "Borrado de la base de dato";
+        header("Location: admin.php");
+        exit();
     }
     else{
         die(mysqli_error($con));
@@ -27,6 +29,8 @@ if(isset($_POST['crear_producto']))
     if($query_run)
     {
         echo "Producto Created Successfully";
+        header("Location: admin.php");
+        exit();
     }
     else
     {
@@ -49,6 +53,8 @@ if(isset($_POST['actualizar_producto']))
     if($query_run)
     {
         echo "Actualizacion completa";
+        header("Location: admin.php");
+        exit();
     }
     else
     {
