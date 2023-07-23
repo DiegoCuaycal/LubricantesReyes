@@ -1,0 +1,43 @@
+*{
+    font-family: 'calibri';
+}
+body{
+    background-image: url(./imagenes/fondo_lubricantes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fomulario{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+}
+#fomulario h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.datos{
+    font-size: 18px;
+    width: 100%;
+    
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #4492df;;
+}
+#boton{
+    border: none;
+    background-color: #4492df;
+    padding: 12px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+#login{
+    margin-top: 40px;
+    color: cadetblue;
+}
