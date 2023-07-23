@@ -291,3 +291,159 @@ td {
 .c2 {
   color: #8d7e7b !important;
 }
+
+.btn-3 {
+  display: inline-block;
+  color: #dfdde0;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin-top: 25px;
+  border: 1px solid #dfdde0;
+}
+
+.btn-3:hover {
+  background-color: #e85123;
+  border: 1px solid #e85123;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  width: 25%;
+}
+
+.link h3 {
+  font-size: 20px;
+  color: #312f32;
+  margin-bottom: 20px;
+}
+.link p {
+  color: #8d7e7b;
+  font-size: 14px;
+  margin: 0 50px 15px 0;
+}
+
+.link ul li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #dfdde0;
+  margin-bottom: 10px;
+}
+
+.socials-2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.link form {
+  display: flex;
+  flex-direction: column;
+}
+.inp {
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-4 {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #61bc00;
+  border: 0;
+  color: #dfdde0;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #303030;
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .header-content h1 {
+    font-size: 40px;
+  }
+
+  .header-content p {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .botons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-1 {
+    margin: 0 0 20px 0;
+  }
+  .socials-1 {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .lubricantes {
+    flex-direction: column;
+    padding: 0px 30px;
+    text-align: center;
+  }
+
+  .lubricantes-1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .lubricantes-2 {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .link {
+    width: 70%;
+  }
+  .link p {
+    margin: 0 0 25px 0;
+  }
+  .socials-2 {
+    margin-bottom: 15px;
+  }
+}
