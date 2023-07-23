@@ -1,5 +1,5 @@
 <?php
-$nombre = $_POST['nombre'];
+$email = $_POST['email'];
 $contraseña = $_POST['contraseña'];
 
 $conexion = mysqli_connect('localhost', 'root', 'root', 'lubricante');
@@ -8,27 +8,39 @@ if (!$conexion) {
     die("Error de conexión a la base de datos: " . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM persona WHERE nombre = '$nombre'";
+$query = "SELECT * FROM usuario WHERE email = '$email'";
 $resultado = mysqli_query($conexion, $query);
 if (!$resultado) {
     die("Error en la consulta: " . mysqli_error($conexion));
 }
+
 if (mysqli_num_rows($resultado) == 1) {
-    $query1 = "SELECT * FROM usuario WHERE contraseña = $contraseña";
-    $resultado1 = mysqli_query($conexion, $query1);
-    $fila = mysqli_fetch_assoc($resultado1);
+    $fila = mysqli_fetch_assoc($resultado);
     $contrasenaHash = $fila['contraseña'];
 
-    if (mysqli_num_rows($resultado1) == 1 && $resultado==$resultado1) {
-        echo "Los datos coinciden.";
-        session_start();
-        $_SESSION['nombre'] = $nombre;
-        header('Location: lubricante.html');
+    if ($contrasenaHash == $contraseña) {
+        // La contraseña es correcta, ahora buscamos el nombre asociado a la cédula
+        $cedulaUsuario = $fila['cedula'];
+        $queryNombre = "SELECT nombre FROM persona WHERE cedula = '$cedulaUsuario'";
+        $resultadoNombre = mysqli_query($conexion, $queryNombre);
+        
+        if ($resultadoNombre && mysqli_num_rows($resultadoNombre) == 1) {
+            $filaNombre = mysqli_fetch_assoc($resultadoNombre);
+            $nombreUsuario = $filaNombre['nombre'];
+            echo $nombreUsuario;
+            echo "Los datos coinciden.";
+            session_start();
+            $_SESSION['nombre'] = $nombreUsuario; // Guardamos el nombre en la sesión
+            header('Location: ../html/lubricante.html');
+        } else {
+            echo "No se pudo obtener el nombre asociado a la cédula.";
+        }
     } else {
         echo "La contraseña es incorrecta.";
     }
 } else {
     echo "El nombre no existe.";
 }
+
 mysqli_close($conexion);
 ?>

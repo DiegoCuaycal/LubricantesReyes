@@ -34,6 +34,7 @@ $error = false;
 
             if ($stmt->execute() && $stmt1->execute()) {
                 $mensaje = "Registro exitoso";
+                header('Location: ../html/lubricante.html');
                 
             } else {
                 $error = true;
