@@ -16,6 +16,35 @@ if(isset($_GET['deleteid'])){
         die(mysqli_error($con));
     }
 }
+if(isset($_GET['deleteventaid'])){
+    $cedula=$_GET['deleteventaid'];
+
+    $sql="delete from usuario where cedula=$cedula";
+    $sql="delete from persona where cedula=$cedula";
+    $result=mysqli_query($con,$sql);
+    if($result){
+        echo "Borrado de la base de dato";
+        header("Location: admin.php");
+        exit();
+    }
+    else{
+        die(mysqli_error($con));
+    }
+}
+if(isset($_GET['deleteusuarioid'])){
+    $id=$_GET['deleteventaid'];
+
+    $sql="delete from ventas where cedula=$id";
+    $result=mysqli_query($con,$sql);
+    if($result){
+        echo "Borrado de la base de dato";
+        header("Location: admin.php");
+        exit();
+    }
+    else{
+        die(mysqli_error($con));
+    }
+}
 if(isset($_POST['crear_producto']))
 {
     $nombreproducto = mysqli_real_escape_string($con, $_POST['nombreproducto']);

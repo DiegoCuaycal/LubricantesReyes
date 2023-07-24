@@ -68,7 +68,6 @@ if(!$con) { die(" Connection Error "); }
                   <td> idproducto </td>
                   <td> cantidad </td>
                   <td> preciototal </td>
-                  <td> Edit </td>
                   <td> Delete </td>
                 </tr>
                 <tr>
@@ -87,11 +86,51 @@ if(!$con) { die(" Connection Error "); }
                     <td>'.$idproducto.'</td>
                     <td>'.$cantidad.'</td>
                     <td>'.$preciototal.'</td>
-                    <td><a href="#" class="btn btn-primary">Edit</a></td>  
-                    <td><a href="delete.php?deleteid='.$id.'" class="btn btn-danger">Delete</a></td>';}
+                    <td><a href="delete.php?deleteventaid='.$id.'" class="btn btn-danger">Delete</a></td>';}
                   }
                 ?>
-                </tr>       
+                </tr>
+                </table>
+                <div class="card-header">
+              <h2 class="display-6 text-center">Usuarios</h2>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered text-center">
+                <tr class="bg-dark text-white">
+                  <td> cedula </td>
+                  <td> nombre </td>
+                  <td> apellido </td>
+                  <td> email </td>
+                  <td> contraseña </td>
+                </tr>
+                <tr>
+                <?php 
+                  $query = " select * from usuario ";
+                  $result = mysqli_query($con,$query);
+                  if($result){
+                  while($row = mysqli_fetch_assoc($result)){
+
+                    $cedula=$row['cedula']; 
+
+                    $query2 = " select * from ventas where cedula=$cedula";
+                    $result = mysqli_query($con,$query);
+                    if($result){
+                    while($row = mysqli_fetch_assoc($result)){
+                      $nombre=$row['nombre']; 
+                      $apellido=$row['apellido']; 
+                    }}
+                    $email=$row['email']; 
+                    $contraseña=$row['contraseña'];
+
+                    echo '<tr><td>'.$cedula.'</td>
+                    <td>'.$nombre.'</td>
+                    <td>'.$apellido.'</td>
+                    <td>'.$email.'</td>
+                    <td>'.$contraseña.'</td>
+                    <td><a href="delete.php?deleteusuarioid='.$cedula.'" class="btn btn-danger">Delete</a></td>';}
+                  }
+                ?>
+                </tr> 
               </table>
             </div>
           </div>
