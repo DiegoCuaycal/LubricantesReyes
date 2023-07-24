@@ -28,7 +28,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $stmt->bind_param("iss", $cedula, $nombre, $apellido);
 
         
-        $hashed_password = password_hash($contraseña, PASSWORD_BCRYPT);
+        
         $stmt1 = $conn->prepare("INSERT INTO usuario (`cedula`, `email`, `contraseña`) VALUES (?, ?, ?)");
         $stmt1->bind_param("iss", $cedula, $email, $contraseña);
 
