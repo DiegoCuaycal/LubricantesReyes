@@ -31,8 +31,8 @@ if(!$con) { die(" Connection Error "); }
                   <td> precio </td>
                   <td> stock </td>
                   <td> Descripcion </td>
-                  <td> Edit </td>
-                  <td> Delete </td>
+                  <td> Editar </td>
+                  <td> Eliminar </td>
                 </tr>
                 <tr>
                 <?php 
@@ -68,7 +68,7 @@ if(!$con) { die(" Connection Error "); }
                   <td> idproducto </td>
                   <td> cantidad </td>
                   <td> preciototal </td>
-                  <td> Delete </td>
+                  <td> Eliminar </td>
                 </tr>
                 <tr>
                 <?php 
@@ -102,6 +102,7 @@ if(!$con) { die(" Connection Error "); }
                   <td> apellido </td>
                   <td> email </td>
                   <td> contraseña </td>
+                  <td> Eliminar </td>
                 </tr>
                 <tr>
                 <?php 
