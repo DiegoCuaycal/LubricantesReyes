@@ -113,12 +113,13 @@ if(!$con) { die(" Connection Error "); }
                     $cedula=$row['cedula']; 
 
                     $query2 = " select * from ventas where cedula=$cedula";
+                    $result2 = mysqli_query($con,$query2);
                     $result = mysqli_query($con,$query);
                     if($result){
-                    while($row = mysqli_fetch_assoc($result)){
+                    while($row = mysqli_fetch_assoc($result2)){
                       $nombre=$row['nombre']; 
                       $apellido=$row['apellido']; 
-                    }}
+                    }
                     $email=$row['email']; 
                     $contraseña=$row['contraseña'];
 
@@ -128,7 +129,7 @@ if(!$con) { die(" Connection Error "); }
                     <td>'.$email.'</td>
                     <td>'.$contraseña.'</td>
                     <td><a href="delete.php?deleteusuarioid='.$cedula.'" class="btn btn-danger">Delete</a></td>';}
-                  }
+                  }}
                 ?>
                 </tr> 
               </table>
