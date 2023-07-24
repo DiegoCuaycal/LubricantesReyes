@@ -109,27 +109,26 @@ if(!$con) { die(" Connection Error "); }
                   $result = mysqli_query($con,$query);
                   if($result){
                   while($row = mysqli_fetch_assoc($result)){
-
                     $cedula=$row['cedula']; 
-
-                    $query2 = " select * from ventas where cedula=$cedula";
-                    $result2 = mysqli_query($con,$query2);
-                    $result = mysqli_query($con,$query);
-                    if($result){
-                    while($row = mysqli_fetch_assoc($result2)){
-                      $nombre=$row['nombre']; 
-                      $apellido=$row['apellido']; 
-                    }
                     $email=$row['email']; 
-                    $contraseña=$row['contraseña'];
+                    $contraseña=$row['contraseña']; 
+
+                    $query2 = " select `nombre`, `apellido` from persona where cedula=$cedula";
+                    $result2 = mysqli_query($con,$query2);
+                    if($result2){
+                      while($row = mysqli_fetch_assoc($result2)){
+                        $nombre=$row['nombre']; 
+                        $apellido=$row['apellido'];
+                    }
+                    }
 
                     echo '<tr><td>'.$cedula.'</td>
-                    <td>'.$nombre.'</td>
-                    <td>'.$apellido.'</td>
                     <td>'.$email.'</td>
                     <td>'.$contraseña.'</td>
+                    <td>'.$nombre.'</td>
+                    <td>'.$apellido.'</td>
                     <td><a href="delete.php?deleteusuarioid='.$cedula.'" class="btn btn-danger">Delete</a></td>';}
-                  }}
+                  }
                 ?>
                 </tr> 
               </table>

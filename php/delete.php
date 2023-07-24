@@ -16,11 +16,12 @@ if(isset($_GET['deleteid'])){
         die(mysqli_error($con));
     }
 }
-if(isset($_GET['deleteventaid'])){
-    $cedula=$_GET['deleteventaid'];
+if(isset($_GET['deleteusuarioid'])){
+    $cedula=$_GET['deleteusuarioid'];
 
-    $sql="delete from usuario where cedula=$cedula";
+    
     $sql="delete from persona where cedula=$cedula";
+    $sql="delete from usuario where cedula=$cedula";
     $result=mysqli_query($con,$sql);
     if($result){
         echo "Borrado de la base de dato";
@@ -31,10 +32,10 @@ if(isset($_GET['deleteventaid'])){
         die(mysqli_error($con));
     }
 }
-if(isset($_GET['deleteusuarioid'])){
+if(isset($_GET['deleteventaid'])){
     $id=$_GET['deleteventaid'];
 
-    $sql="delete from ventas where cedula=$id";
+    $sql="delete from ventas where id=$id";
     $result=mysqli_query($con,$sql);
     if($result){
         echo "Borrado de la base de dato";
