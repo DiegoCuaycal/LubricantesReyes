@@ -24,9 +24,12 @@ if(isset($_GET['deleteusuarioid'])){
     $sql="delete from usuario where cedula=$cedula";
     $result=mysqli_query($con,$sql);
     if($result){
-        echo "Borrado de la base de dato";
-        header("Location: admin.php");
-        exit();
+        $sql="delete from persona where cedula=$cedula";
+        $result=mysqli_query($con,$sql);
+        if($result){
+            header("Location: admin.php");
+            exit();
+        }
     }
     else{
         die(mysqli_error($con));
