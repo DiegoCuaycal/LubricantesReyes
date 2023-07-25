@@ -5,6 +5,6 @@
 $hostname_LubricantesBD = "Localhost";
 $database_LubricantesBD = "carritobd";
 $username_LubricantesBD = "root";
-$password_LubricantesBD = "12345678";
+$password_LubricantesBD = "";
 $LubricantesBD = mysql_pconnect($hostname_LubricantesBD, $username_LubricantesBD, $password_LubricantesBD) or trigger_error(mysql_error(),E_USER_ERROR); 
 ?>

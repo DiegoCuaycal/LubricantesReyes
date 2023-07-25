@@ -76,7 +76,8 @@
 
   <section class="elementos container" id="lista">
     <?php
-    $conexion = mysqli_connect("localhost", "root", "root", "lubricante");
+    $mysql = mysqli_connect($hostname, $username, $password, $database);
+    $conexion = mysqli_connect("localhost", "root", "", "lubricante");
     if (mysqli_connect_errno()) {
       echo "Error al conectar a la base de datos: " . mysqli_connect_error();
     }
