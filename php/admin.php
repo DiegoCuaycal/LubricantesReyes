@@ -15,7 +15,7 @@ if(!$con) { die(" Connection Error "); }
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-  
+<a class="btn btn-primary" href="../html/lubricante.php">Cerrar Sesion</a>
 <div class="container">
       <div class="row mt-5">
         <div class="col"><h4><a href="productocrear.php"><button>Añadir Producto</></button></a></h4>
