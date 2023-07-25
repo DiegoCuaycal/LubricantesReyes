@@ -35,10 +35,8 @@
     <div class="header-content container">
       <h1>Lubricante Reyes</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime
-        nisi fuga, sequi molestiae consectetur illum facere error veniam
-        incidunt quo quisquam in magnam suscipit nobis ipsa? Libero,
-        architecto accusamus?
+      Ofrecemos lubricantes,filtros de aceite,aire y combustible,
+      en las mejores marcas del mercado y a excelentes precios
       </p>
       <div class="botons">
         <a href="#" class="btn-1">Mas informacion</a>
@@ -63,7 +61,7 @@
     </div>
     <div class="lubricantes-2">
       <h2>
-        Aciete <br />
+        Aceite <br />
         de carro
       </h2>
     </div>
@@ -129,11 +127,8 @@
     <div class="links">
       <div class="link">
         <h3>Redes</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nostrum
-          quasi veniam? Accusantium rem quod neque, minus quis dolorem
-          perspiciatis sunt? Placeat a aliquam iusto quia perferendis
-          reprehenderit excepturi tempora.
+        <p><a href="https://www.facebook.com/lubricantesreyescayambe/">
+        https://www.facebook.com/<br>lubricantesreyescayambe/</a>
         </p>
         <div class="socials-2">
           <img src="../" alt="" />
@@ -144,30 +139,17 @@
       </div>
 
       <div class="link">
-        <h3>Lorem</h3>
-        <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem 1</a></li>
-          <li><a href="#">Lorem 2</a></li>
-          <li><a href="#">Lorem 3</a></li>
-          <li><a href="#">Lorem 4</a></li>
-
-        </ul>
+        <h3>Direccion</h3>
+        Avenida Córdova Galarza y Natalia Jarrin , Cayambe, Ecuador
       </div>
 
       <div class="link">
-        <h3>Lorem</h3>
-        <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem 1</a></li>
-          <li><a href="#">Lorem 2</a></li>
-          <li><a href="#">Lorem 3</a></li>
-          <li><a href="#">Lorem 4</a></li>
-        </ul>
+        <h3>Numero Telefonico</h3>
+        099 744 7053
       </div>
 
       <div class="link">
-        <h3>Lorem</h3>
+        <h3>Tiene sugerencias? Contactenos</h3>
         <form>
           <input type="text" placeholder="Nombre" class="inp" />
           <input type="email" placeholder="Email" class="inp" />
