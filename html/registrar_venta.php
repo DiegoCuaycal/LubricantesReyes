@@ -2,7 +2,7 @@
 
 if (isset($_GET['idproducto']) && isset($_GET['precio'])&& isset($_POST['cantidad_' . $_GET['idproducto']])&& isset($_GET['cedula'])) {
 
-    $conexion = mysqli_connect("localhost", "root", "root", "lubricante");
+    $conexion = mysqli_connect("localhost", "root", "", "lubricante");
 
     if (mysqli_connect_errno()) {
         echo "Error al conectar a la base de datos: " . mysqli_connect_error();
@@ -20,6 +20,10 @@ if (isset($_GET['idproducto']) && isset($_GET['precio'])&& isset($_POST['cantida
 
     if ($resultado) {
         echo "Venta registrada correctamente.";
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['cedula'] = $cedula; 
+        header('Location: ../html/lubricante.php');
     } else {
         echo "Error al registrar la venta: " . mysqli_error($conexion);
     }

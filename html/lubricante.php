@@ -1,9 +1,4 @@
-<?php
-    $tiempo_vida_sesion = 1800; // 30 minutos en segundos
 
-    // Establecer el tiempo de vida de la sesión
-    ini_set('session.gc_maxlifetime', $tiempo_vida_sesion);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +71,7 @@
 
   <section class="elementos container" id="lista">
     <?php
-    $conexion = mysqli_connect("localhost", "root", "root", "lubricante");
+    $conexion = mysqli_connect("localhost", "root", "", "lubricante");
     if (mysqli_connect_errno()) {
       echo "Error al conectar a la base de datos: " . mysqli_connect_error();
     }
@@ -89,20 +84,28 @@
       echo "<div class='elemento'>";
       echo "<h3>" . $fila['nombreproducto'] . "</h3>";
       echo "<p class='precio'>" . $fila['precio'] . "</p>";
-      echo " <img src='../imagenes/AceiteCastrol.png' alt='' />";
+      
+      $nombreProducto = $fila['nombreproducto'];
+      
+      $rutaImagenes = '../imagenes/';
+      if (file_exists($rutaImagenes . $nombreProducto. '.jpg')) {
+        echo "<img src='" . $rutaImagenes . $nombreProducto . ".jpg' alt='' />";
+      }else {
+  
+        echo "<img src='" . $rutaImagenes . "AceiteTotal.jpg' alt='Imagen no disponible' />";
+    }
       echo "<p>" . $fila['descripcion'] . "</p>";
       if (isset($_SESSION["cedula"])) {
-      echo "<form action=\"registrar_venta.php?idproducto=" . $fila['idproducto'] . "&precio=" . $fila['precio'] . "&cedula=" . $_SESSION["cedula"] . "\" method=\"post\">";
-      echo "<input type=\"number\" name=\"cantidad_" . $fila['idproducto'] . "\" min=\"1\" max=\"100\"value=1>";
-      echo "<input type=\"submit\" value=\"Registrar Venta\">";
-      echo "</form>";
+        echo "<form action=\"registrar_venta.php?idproducto=" . $fila['idproducto'] . "&precio=" . $fila['precio'] . "&cedula=" . $_SESSION["cedula"] . "\" method=\"post\">";
+        echo "<input type=\"number\" name=\"cantidad_" . $fila['idproducto'] . "\" min=\"1\" max=\"100\"value=1>";
+        echo "<input type=\"submit\" value=\"Registrar Venta\">";
+        echo "</form>";
       }
       echo "</div>";
       echo "</div>";
 
     }
-    // mysqli_free_result($resultado);
-    // mysqli_close($conexion);
+  
     ?>
 
 
@@ -113,7 +116,7 @@
 
   </section>
 
-  
+
 
   <section class="lubricantes container">
     <div class="lubricantes-1">
