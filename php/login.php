@@ -31,8 +31,8 @@ if (mysqli_num_rows($resultado) == 1) {
             echo "Los datos coinciden.";
             session_start();
             $_SESSION['loggedin'] = true;
-            $_SESSION['nombre'] = $nombreUsuario; // Guardamos el nombre en la sesión
-            header('Location: ../html/lubricante.html');
+            $_SESSION['cedula'] = $cedulaUsuario; // Guardamos el nombre en la sesión
+            header('Location: ../html/lubricante.php');
         } else {
             echo "No se pudo obtener el nombre asociado a la cédula.";
         }

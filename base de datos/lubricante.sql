@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 25-07-2023 a las 08:39:49
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.0.28
+-- Host: localhost:3306
+-- Generation Time: Jul 25, 2023 at 02:31 PM
+-- Server version: 5.7.24
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,23 +18,23 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `lubricante`
+-- Database: `lubricante`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `administrador`
+-- Table structure for table `administrador`
 --
 
 CREATE TABLE `administrador` (
   `cedula` int(10) NOT NULL,
   `email` varchar(50) NOT NULL,
   `contraseña` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `administrador`
+-- Dumping data for table `administrador`
 --
 
 INSERT INTO `administrador` (`cedula`, `email`, `contraseña`) VALUES
@@ -43,17 +43,17 @@ INSERT INTO `administrador` (`cedula`, `email`, `contraseña`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `persona`
+-- Table structure for table `persona`
 --
 
 CREATE TABLE `persona` (
   `cedula` int(20) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `persona`
+-- Dumping data for table `persona`
 --
 
 INSERT INTO `persona` (`cedula`, `nombre`, `apellido`) VALUES
@@ -69,7 +69,7 @@ INSERT INTO `persona` (`cedula`, `nombre`, `apellido`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `producto`
+-- Table structure for table `producto`
 --
 
 CREATE TABLE `producto` (
@@ -78,14 +78,14 @@ CREATE TABLE `producto` (
   `precio` double(50,0) NOT NULL,
   `stock` int(10) NOT NULL,
   `descripcion` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `producto`
+-- Dumping data for table `producto`
 --
 
 INSERT INTO `producto` (`idproducto`, `nombreproducto`, `precio`, `stock`, `descripcion`) VALUES
-(1, 'Liquido de frenos', 8, 10, 'El Líquido de frenos es un componente esencial para el funcionamiento seguro y efectivo de cualquier vehículo equipado con frenos hidráulicos. Diseñado para transferir la fuerza del pedal de freno a las ruedas, este producto se encuentra entre los elementos más críticos para garantizar un rendimiento óptimo del sistema de frenado. Nuestro líquido de frenos de alta calidad ha sido cuidadosamente formulado y probado para ofrecer una excelente respuesta en condiciones diversas y extremas, brindando tranquilidad y seguridad a los conductores en cada trayecto.'),
+(1, 'Liquido de frenos', 8, 10, 'El Líquido de frenos es un componente esencial para el funcionamiento seguro y efectivo de cualquier vehículo equipado con frenos hidráulicos. Diseñado para transferir la fuerza del pedal de freno a las ruedas, este producto se encuentra entre los elementos más críticos para garantizar un rendimiento óptimo del sistema de frenado. Nuestro líquido de frenos de alta calidad ha sido cuidadosamente formulado y probado para ofrecer una excelente respuesta en condiciones diversas y extremas, brindando tranquilidad y seguridad a los conductores en cada trayecto'),
 (2, 'Aceite Castrol 80w90 Galon 14', 3, 5, 'Este aceite proporciona una excelente protección contra el desgaste del motor, lo que ayuda a prolongar la vida útil del mismo.'),
 (3, 'Aceite Gulf 140 galón ', 9, 7, 'El Aceite Gulf 140 Galón es un lubricante de calidad superior, diseñado para brindar un rendimiento excepcional en una variedad de aplicaciones industriales y equipos de trabajo pesado. Este galón de aceite representa una solución confiable y eficiente para mantener su maquinaria en óptimas condiciones y proteger sus inversiones a largo plazo.'),
 (4, 'Aceite Mobil Delvac', 105, 5, 'El Aceite Mobil Delvac es una avanzada y confiable línea de aceites lubricantes diseñada específicamente para motores diésel de alto rendimiento. Esta gama de productos representa la excelencia en lubricación y ofrece una serie de beneficios clave para garantizar el máximo rendimiento y protección de sus motores diésel, ya sea en vehículos comerciales, industriales o equipos pesados.'),
@@ -109,22 +109,21 @@ INSERT INTO `producto` (`idproducto`, `nombreproducto`, `precio`, `stock`, `desc
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
   `cedula` int(20) NOT NULL,
   `email` varchar(50) NOT NULL,
   `contraseña` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`cedula`, `email`, `contraseña`) VALUES
 (1111111, 'pepe@gmail.com', 'contra1234'),
-(55555555, 'rooadasdsad@email.com', '$2y$10$PZwwRmcM05vNKb1BrmufJ.JRGPaMaVlYCtui/z9HR0xsDZe0jmW4e'),
 (88888888, 'ejemplo@gmail.com', '123456789a'),
 (123123123, 'ejemplo1@gmail.com', 'adadwawdawd434543'),
 (123456789, 'ejemplo@gmail.com', '12345678910'),
@@ -134,7 +133,7 @@ INSERT INTO `usuario` (`cedula`, `email`, `contraseña`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ventas`
+-- Table structure for table `ventas`
 --
 
 CREATE TABLE `ventas` (
@@ -143,64 +142,88 @@ CREATE TABLE `ventas` (
   `idproducto` int(10) NOT NULL,
   `cantidad` int(10) NOT NULL,
   `preciototal` double(50,0) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Índices para tablas volcadas
+-- Dumping data for table `ventas`
+--
+
+INSERT INTO `ventas` (`id`, `idcliente`, `idproducto`, `cantidad`, `preciototal`) VALUES
+(1, 1009999999, 11, 20, 40);
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `administrador`
+-- Indexes for table `administrador`
 --
 ALTER TABLE `administrador`
   ADD KEY `admin_persona` (`cedula`);
 
 --
--- Indices de la tabla `persona`
+-- Indexes for table `persona`
 --
 ALTER TABLE `persona`
   ADD PRIMARY KEY (`cedula`);
 
 --
--- Indices de la tabla `producto`
+-- Indexes for table `producto`
 --
 ALTER TABLE `producto`
   ADD PRIMARY KEY (`idproducto`);
 
 --
--- Indices de la tabla `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`cedula`);
 
 --
--- Indices de la tabla `ventas`
+-- Indexes for table `ventas`
 --
 ALTER TABLE `ventas`
+  ADD PRIMARY KEY (`id`),
   ADD KEY `ventas_producto` (`idproducto`),
   ADD KEY `ventas_usuario` (`idcliente`);
 
 --
--- Restricciones para tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Filtros para la tabla `administrador`
+-- AUTO_INCREMENT for table `producto`
+--
+ALTER TABLE `producto`
+  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `ventas`
+--
+ALTER TABLE `ventas`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `administrador`
 --
 ALTER TABLE `administrador`
   ADD CONSTRAINT `admin_persona` FOREIGN KEY (`cedula`) REFERENCES `persona` (`cedula`);
 
 --
--- Filtros para la tabla `usuario`
+-- Constraints for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD CONSTRAINT `usuario_persona` FOREIGN KEY (`cedula`) REFERENCES `persona` (`cedula`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `ventas`
+-- Constraints for table `ventas`
 --
 ALTER TABLE `ventas`
-  ADD CONSTRAINT `ventas_producto` FOREIGN KEY (`idproducto`) REFERENCES `producto` (`idproducto`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `ventas_producto` FOREIGN KEY (`idproducto`) REFERENCES `producto` (`idproducto`),
   ADD CONSTRAINT `ventas_usuario` FOREIGN KEY (`idcliente`) REFERENCES `usuario` (`cedula`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 

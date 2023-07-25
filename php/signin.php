@@ -36,7 +36,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         if ($stmt->execute() && $stmt1->execute()) {
             $mensaje = "Registro exitoso";
             
-            header('Location: ../html/lubricante.html');
+            header('Location: ../html/lubricante.php');
             exit(); 
         } else {
             $error = true;

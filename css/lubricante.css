@@ -17,19 +17,25 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+#lista{
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .header {
   display: flex;
   position: relative;
 }
-#cerrarsesion{
+
+#cerrarsesion {
   border: none;
-  margin-top:20px ;
+  margin-top: 20px;
   color: rgb(0, 0, 0);
   font-size: 18px;
   background-color: rgb(252, 252, 252);
   font-weight: 600;
 }
+
 .menu {
   position: absolute;
   top: 0;
@@ -39,6 +45,7 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  background-color: #e45d34;
 }
 
 .logo {
@@ -55,13 +62,14 @@ body {
 .menu .navbar ul li a {
   font-size: 18px;
   padding: 20px;
-  color: #303030;
+  color: #dfdde0;
   display: block;
   font-weight: 600;
+
 }
 
 .menu .navbar ul li a:hover {
-  color: #e85123;
+  color: #303030;
 }
 
 #menu {
@@ -225,6 +233,7 @@ td {
 .swiper-slide {
   text-align: center;
   padding-bottom: 80px;
+  width: 230px;
 }
 
 .swiper-button-prev::after {
@@ -257,7 +266,8 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 50px;
+  margin: 0 50px;
+  width: 205px;
 }
 
 .elemento h3 {
