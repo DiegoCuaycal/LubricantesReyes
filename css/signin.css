@@ -6,6 +6,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#volver{
+    background-color: aquamarine;
+    height: 25px;
+}
 #fomulario{
     width: 400px;
     background: #24303c;

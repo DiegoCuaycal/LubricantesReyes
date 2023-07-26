@@ -22,6 +22,22 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+#titulo{
+  color: rgb(146, 197, 240);
+  font-size: 25px;
+}
+#contenido{
+  position: absolute;
+  right: 0;
+  top:0;
+  padding: 0;
+}
+#contenido a{
+  position: absolute;
+  right: 0;
+  top:0;
+  padding: 0;
+}
 .header {
   display: flex;
   position: relative;

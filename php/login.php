@@ -72,7 +72,7 @@ if (mysqli_num_rows($resultado) == 1) {
             echo "La contraseña es incorrecta.";
         }
     } else {
-        echo "El nombre no existe.";
+        echo "El email no existe.";
     }
 }
 

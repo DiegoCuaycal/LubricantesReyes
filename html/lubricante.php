@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />-->
+ 
   <link rel="stylesheet" href="../css/lubricante.css" />
 </head>
 
@@ -18,10 +18,7 @@
       <label for="menu"><img src="../imagenes/LubricanteReyesPortada.jpg" class="menu-icono" alt="logo" /></label>
       <nav class="navbar">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Lubricantes</a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Contactos</a></li>
+          <li id="titulo">Lubricantes Reyes</li>
           <li id="contenido"></li>
         </ul>
       </nav>
@@ -38,38 +35,26 @@
       Ofrecemos lubricantes,filtros de aceite,aire y combustible,
       en las mejores marcas del mercado y a excelentes precios
       </p>
-      <div class="botons">
-        <a href="#" class="btn-1">Mas informacion</a>
-        <a href="#" class="btn-1">Menu</a>
-      </div>
-      <div class="socials-1">
-        <img src=" " alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
-      <a href="#lista">
-        <img class="arrow" src="../imagenes/AceiteGulf.jpg" alt="" />
-      </a>
+      
     </div>
   </header>
 
   <section class="lubricantes container">
     <div class="lubricantes-1">
-      <h3>Valvoline</h3>
+      
       <hr />
-      <p>Lubricantes</p>
+      
     </div>
     <div class="lubricantes-2">
       <h2>
-        Aceite <br />
-        de carro
+        Productos
       </h2>
     </div>
   </section>
 
   <section class="elementos container" id="lista">
     <?php
-    $conexion = mysqli_connect("localhost", "root", "", "lubricante");
+    $conexion = mysqli_connect("localhost", "root", "root", "lubricante");
     if (mysqli_connect_errno()) {
       echo "Error al conectar a la base de datos: " . mysqli_connect_error();
     }
@@ -106,15 +91,7 @@
   
     ?>
 
-
-
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-
   </section>
-
-
 
   <section class="lubricantes container">
     <div class="lubricantes-1">
@@ -130,12 +107,6 @@
         <p><a href="https://www.facebook.com/lubricantesreyescayambe/">
         https://www.facebook.com/<br>lubricantesreyescayambe/</a>
         </p>
-        <div class="socials-2">
-          <img src="../" alt="" />
-          <img src="../" alt="" />
-          <img src="../" alt="" />
-          <img src="../" alt="" />
-        </div>
       </div>
 
       <div class="link">
@@ -148,19 +119,10 @@
         099 744 7053
       </div>
 
-      <div class="link">
-        <h3>Tiene sugerencias? Contactenos</h3>
-        <form>
-          <input type="text" placeholder="Nombre" class="inp" />
-          <input type="email" placeholder="Email" class="inp" />
-          <textarea class="inp"></textarea>
-          <input class="btn-4" type="submit" value="Enviar" />
-        </form>
-      </div>
     </div>
   </footer>
 
-  <!--<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>-->
+ 
   <script src="../js/lubricante.js"></script>
   <script src="../js/estadosesion.js"></script>
 </body>

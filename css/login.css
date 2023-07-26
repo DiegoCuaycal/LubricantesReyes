@@ -14,6 +14,10 @@ body{
     top: 15%;
     border-radius: 5%;
 }
+#volver{
+    background-color: aquamarine;
+    height: 25px;
+}
 
 h2{
     background-color: rgb(255, 255, 255);
