@@ -2,7 +2,7 @@
 $email = $_POST['email'];
 $contraseña = $_POST['contraseña'];
 
-$conexion = mysqli_connect('localhost', 'root', 'root', 'lubricante');
+$conexion = mysqli_connect('localhost', 'root', '', 'lubricante');
 
 if (!$conexion) {
     die("Error de conexión a la base de datos: " . mysqli_connect_error());

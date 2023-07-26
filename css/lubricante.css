@@ -17,25 +17,25 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-#lista{
+#lista {
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
 }
-#titulo{
+#titulo {
   color: rgb(146, 197, 240);
   font-size: 25px;
 }
-#contenido{
+#contenido {
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
   padding: 0;
 }
-#contenido a{
+#contenido a {
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
   padding: 0;
 }
 .header {
@@ -81,7 +81,6 @@ body {
   color: #dfdde0;
   display: block;
   font-weight: 600;
-
 }
 
 .menu .navbar ul li a:hover {
@@ -342,7 +341,10 @@ td {
 }
 
 .footer {
-  padding-bottom: 50px;
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 .links {
@@ -424,7 +426,7 @@ td {
     width: 100%;
   }
 
-  #menu:checked~.navbar {
+  #menu:checked ~ .navbar {
     display: initial;
   }
 
@@ -495,5 +497,149 @@ td {
 
   .socials-2 {
     margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #pielogo {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #6facc6;
+  }
+
+  #pielogo > div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+    background-color: aqua;
+    border-radius: 10px;
+  }
+
+  .seccionpie {
+    flex: 1;
+    padding: 25px;
+  }
+
+  .seccionpie2 {
+    flex: 1;
+    padding: 25px;
+  }
+
+  .seccionpie3 {
+    flex: 1;
+    padding: 25px;
+  }
+
+  .seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+  }
+
+  .seccionpie2 h1 {
+    font: bold 20px Arial, sans-serif;
+  }
+
+  .seccionpie3 h1 {
+    font: bold 20px Arial, sans-serif;
+  }
+
+  .seccionpie p {
+    margin-top: 5px;
+  }
+
+  .seccionpie2 p {
+    margin-top: 5px;
+  }
+
+  .seccionpie3 p {
+    margin-top: 5px;
+  }
+
+  .seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: #5a1a4a;
+    text-decoration: none;
+  }
+
+  .seccionpie2 a {
+    font: bold 16px Arial, sans-serif;
+    color: #156f75;
+    text-decoration: none;
+  }
+
+  .seccionpie2 p {
+    font: bold 16px Arial, sans-serif;
+    color: #156f75;
+    text-decoration: none;
+  }
+
+  .seccionpie3 p {
+    font: bold 16px Arial, sans-serif;
+    color: #5a1a4a;
+    text-decoration: none;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  .social-links .link {
+    margin: 5px; /* Agrega un espacio entre los elementos */
+    text-align: center; /* Centra el contenido en cada columna */
+  }
+
+  .facebook-logo,
+  .whatsapp-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .whatsapp-container p {
+    margin: 0;
+  }
+
+  /* Estilos para ocultar el número al hacer clic */
+  .link p {
+    cursor: pointer;
+  }
+
+  .link p::after {
+    content: attr(data-number);
+  }
+
+  .link p:hover::after {
+    content: none;
+  }
+
+  /* Estilos para dispositivos con ancho menor a 600px */
+  @media (max-width: 600px) {
+    .social-links {
+      flex-direction: column; /* Muestra los elementos en columnas */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    .social-links .link {
+      margin: 5px 0; /* Agrega un espacio vertical entre los elementos */
+    }
+
+    .facebook-logo,
+    .whatsapp-logo {
+      width: 30px; /* Ajusta el tamaño según tus preferencias */
+      height: auto; /* Ajusta el tamaño según tus preferencias */
+    }
+    .portada-container {
+      width: 100%;
+      height: 400px; /* Ajusta la altura según tus preferencias */
+      position: relative;
+      overflow: hidden;
+    }
   }
 }

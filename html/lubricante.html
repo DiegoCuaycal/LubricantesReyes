@@ -1,325 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/lubricante.css" />
+    <script src="../js/lubricante.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/lubricante.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="menu container">
-      <a href="#" class="logo"></a>
-      <input type="checkbox" id="menu" />
-      <label for="menu"><img src="../imagenes/menu.png" class="menu-icono" alt="logo" /></label>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Lubricantes</a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Contactos</a></li>
-          <li id="contenido"></li>
-        </ul>
-      </nav>
-      <div>
-        <ul>
-          <li class="submenu">
-            <img src="../imagenes/car.svg" id="img-carrito" alt="" />
-            <div id="carrito">
-              <table id="lista-carrito">
-                <thead>
-                  <tr>
-                    <th>Imagen</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-              <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="header-content container">
-      <h1>Lubricante Reyes</h1>
-      <p>
-        En Lubricantes Reyes disponemos de la tienda online con el catálogo de
-        aceites para motor y lubricantes más extenso que encontrará en
-        internet, además de recambios, accesorios, aditivos e infinidad de
-        productos para su automóvil, moto o vehículo agrícola, a precios muy
-        económicos.
-      </p>
-      <div class="botons">
-        <a href="#" class="btn-1">Mas informacion</a>
-        <a href="#" class="btn-1">Menu</a>
-      </div>
-      <div class="socials-1">
-        <img src="../imagenes/s1.svg" alt="" />
-        <img src="../imagenes/s2.svg" alt="" />
-        <img src="../imagenes/s3.svg" alt="" />
-      </div>
-      <a href="#lista">
-        <img class="arrow" src="../imagenes/arrow.svg" alt="" />
-      </a>
-    </div>
-  </header>
-
-  <section class="lubricantes container">
-    <div class="lubricantes-1">
-      <h3>Valvoline</h3>
-      <hr />
-      <p>Lubricantes</p>
-    </div>
-    <div class="lubricantes-2">
-      <h2>
-        Aceite <br />
-        de carro
-      </h2>
-    </div>
-  </section>
-
-  <section class="elementos container" id="lista">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3>Aceite Castrol 80w90 Galon</h3>
-            <p class="precio">$8</p>
-            <img src="../imagenes/AceiteCastrol.png" alt="" />
-            <p>
-              Este aceite proporciona una excelente protección contra el desgaste del motor, lo que ayuda a prolongar la
-              vida útil del mismo.
-            </p>
-            <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3>Aceite Castrol 80w90 Galon 1/4</h3>
-            <p class="precio">$3</p>
-            <img src="../imagenes/AceiteCastrol80.jpg" alt="" />
-            <p>
-              Este aceite proporciona una excelente protección contra el desgaste del motor, lo que ayuda a prolongar la
-              vida útil del mismo.
-            </p>
-            <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3>Aceite Gulf 140 galón</h3>
-            <p class="precio">$9</p>
-            <img src="../imagenes/AceiteGulf140.jpg" alt="" />
-            <p>
-              El Aceite Gulf 140 Galón es un lubricante de calidad superior, diseñado para brindar un rendimiento
-              excepcional en una variedad de aplicaciones industriales y equipos de trabajo pesado. Este galón de aceite
-              representa una solución confiable y eficiente para mantener su maquinaria en óptimas condiciones y
-              proteger sus inversiones a largo plazo.
-            </p>
-            <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3>Aceite Mobil Delvac</h3>
-            <p class="precio">$100</p>
-            <img src="../imagenes/AceiteMobilMx.jpg" alt="" />
-            <p>
-              El Aceite Mobil Delvac es una avanzada y confiable línea de aceites lubricantes diseñada específicamente
-              para motores diésel de alto rendimiento. Esta gama de productos representa la excelencia en lubricación y
-              ofrece una serie de beneficios clave para garantizar el máximo rendimiento y protección de sus motores
-              diésel, ya sea en vehículos comerciales, industriales o equipos pesados.
-            </p>
-            <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3>Filtro combustible Franing HCX-446</h3>
-            <p class="precio">$5</p>
-            <img src="../imagenes/FiltroFraning.jpg" alt="" />
-            <p>
-              El Filtro de Combustible Franing HCX-446 es un componente esencial diseñado para garantizar un flujo de
-              combustible limpio y libre de impurezas hacia el motor de su vehículo. Con una construcción de alta
-              calidad y tecnología avanzada, este filtro proporciona una filtración eficiente y una protección óptima
-              para el sistema de combustible, manteniendo el motor en su mejor rendimiento y prolongando su vida útil.
-            </p>
-            <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
-          </div>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo"></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu"
+          ><img src="../imagenes/menu.png" class="menu-icono" alt="logo"
+        /></label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Lubricantes</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li id="contenido"></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li class="submenu">
+              <img src="../imagenes/car.svg" id="img-carrito" alt="" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <section class="lubricantes container">
-    <div class="lubricantes-2">
-      <h2>
-        Aciete <br />
-        de carro
-      </h2>
-    </div>
-    <div class="lubricantes-1">
-      <h3>Valvoline</h3>
-      <hr />
-      <p>Lubricantes</p>
-    </div>
-  </section>
-
-  <section class="elementos container" id="lista-2">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3 class="c1">Aceite Valvoline para motos 1/4</h3>
-            <p class="precio">$4</p>
-            <img src="../imagenes/AceiteValvoline14.jpg" alt="" />
-            <p class="c2">
-              El Aceite Valvoline para Motos 1/4 es un lubricante de alto rendimiento especialmente formulado para
-              proporcionar una protección excepcional y un funcionamiento óptimo en motores de motocicletas. Este
-              producto representa la excelencia en lubricación y ha sido diseñado para satisfacer las demandas únicas de
-              los motores de motos, garantizando un rendimiento suave, una potencia confiable y una
-              durabilidad prolongada.
-            </p>
-            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3 class="c1">Liquido de frenos 1 litro</h3>
-            <p class="precio">$10</p>
-            <img src="../imagenes/LiquidoFreno1Litro.jpg" alt="" />
-            <p class="c2">
-              El Líquido de Frenos de 1 litro es un fluido especializado diseñado para el sistema de frenos de
-              vehículos, motocicletas y otros equipos que requieren un frenado seguro y eficiente. Este producto es
-              esencial para mantener la integridad y el rendimiento óptimo del sistema de frenado, proporcionando
-              confianza al conductor y seguridad para todos los ocupantes del vehículo.
-            </p>
-            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3 class="c1">Liquido de frenos</h3>
-            <p class="precio">$4</p>
-            <img src="../imagenes/LiquidoFre.jpg" alt="" />
-            <p class="c2">
-              El Líquido de Frenos es un fluido esencial para el correcto funcionamiento del sistema de frenado de
-              vehículos, motocicletas y otros equipos con frenos hidráulicos. Este producto juega un papel crucial al
-              transmitir la fuerza desde el pedal de freno hacia los cilindros y calibradores, permitiendo un frenado
-              efectivo y seguro. Su uso adecuado asegura un rendimiento óptimo del sistema de frenado, brindando
-              confianza y seguridad al conductor y a los pasajeros.
-            </p>
-            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3 class="c1">Aceite Castrol para motos 1/4</h3>
-            <p class="precio">$5</p>
-            <img src="../imagenes/LubricanteUbx.jpg" alt="" />
-            <p class="c2">
-              El Aceite Castrol para Motos 1/4 es un lubricante de alto rendimiento especialmente diseñado para
-              satisfacer las exigentes necesidades de los motores de motocicletas. Con la calidad reconocida de la marca
-              Castrol, este aceite proporciona una protección óptima y un rendimiento confiable, asegurando una
-              experiencia de conducción suave y segura para los amantes de las dos ruedas.
-            </p>
-            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="elemento">
-            <h3 class="c1">AcieteCastrol</h3>
-            <p class="precio">$30</p>
-            <img src="../imagenes/LubricanteValvoline.jpg" alt="" />
-            <p class="c2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              maiores ipsa quam nam aspernatur facilis! Eveniet at in aperiam
-              corrupti culpa nesciunt, ratione voluptate dolorum blanditiis ut
-              amet, architecto laboriosam.
-            </p>
-            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <section class="lubricantes container">
-    <div class="lubricantes-1">
-      <hr />
-      <p>Contacto</p>
-    </div>
-  </section>
-
-  <footer class="footer container">
-    <div class="links">
-      <div class="link">
-        <h3>Redes</h3>
+      <div class="header-content container">
+        <h1>Lubricante Reyes</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nostrum
-          quasi veniam? Accusantium rem quod neque, minus quis dolorem
-          perspiciatis sunt? Placeat a aliquam iusto quia perferendis
-          reprehenderit excepturi tempora.
+          En Lubricantes Reyes disponemos de la tienda online con el catálogo de
+          aceites para motor y lubricantes más extenso que encontrará en
+          internet, además de recambios, accesorios, aditivos e infinidad de
+          productos para su automóvil, moto o vehículo agrícola, a precios muy
+          económicos.
         </p>
-        <div class="socials-2">
-          <img src="../" alt="" />
-          <img src="../" alt="" />
-          <img src="../" alt="" />
-          <img src="../" alt="" />
+        <div class="botons">
+          <a href="#" class="btn-1">Mas informacion</a>
+          <a href="#" class="btn-1">Menu</a>
+        </div>
+        <div class="socials-1">
+          <img src="../imagenes/s1.svg" alt="" />
+          <img src="../imagenes/s2.svg" alt="" />
+          <img src="../imagenes/s3.svg" alt="" />
+        </div>
+        <a href="#lista">
+          <img class="arrow" src="../imagenes/arrow.svg" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <section class="lubricantes container">
+      <div class="lubricantes-1">
+        <h3>Valvoline</h3>
+        <hr />
+        <p>Lubricantes</p>
+      </div>
+      <div class="lubricantes-2">
+        <h2>
+          Aceite <br />
+          de carro
+        </h2>
+      </div>
+    </section>
+
+    <section class="elementos container" id="lista">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3>Aceite Castrol 80w90 Galon</h3>
+              <p class="precio">$8</p>
+              <img src="../imagenes/AceiteCastrol.png" alt="" />
+              <p>
+                Este aceite proporciona una excelente protección contra el
+                desgaste del motor, lo que ayuda a prolongar la
+                vida útil del mismo.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="1"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3>Aceite Castrol 80w90 Galon 1/4</h3>
+              <p class="precio">$3</p>
+              <img src="../imagenes/AceiteCastrol80.jpg" alt="" />
+              <p>
+                Este aceite proporciona una excelente protección contra el
+                desgaste del motor, lo que ayuda a prolongar la
+                vida útil del mismo.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="2"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3>Aceite Gulf 140 galón</h3>
+              <p class="precio">$9</p>
+              <img src="../imagenes/AceiteGulf140.jpg" alt="" />
+              <p>
+                El Aceite Gulf 140 Galón es un lubricante de calidad superior,
+                diseñado para brindar un rendimiento excepcional en una variedad
+                de aplicaciones industriales y equipos de trabajo pesado. Este
+                galón de aceite representa una solución confiable y eficiente
+                para mantener su maquinaria en óptimas condiciones y proteger
+                sus inversiones a largo plazo.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="3"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3>Aceite Mobil Delvac</h3>
+              <p class="precio">$100</p>
+              <img src="../imagenes/AceiteMobilMx.jpg" alt="" />
+              <p>
+                El Aceite Mobil Delvac es una avanzada y confiable línea de
+                aceites lubricantes diseñada específicamente para motores diésel
+                de alto rendimiento. Esta gama de productos representa la
+                excelencia en lubricación y ofrece una serie de beneficios clave
+                para garantizar el máximo rendimiento y protección de sus
+                motores diésel, ya sea en vehículos comerciales, industriales o
+                equipos pesados.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="4"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3>Filtro combustible Franing HCX-446</h3>
+              <p class="precio">$5</p>
+              <img src="../imagenes/FiltroFraning.jpg" alt="" />
+              <p>
+                El Filtro de Combustible Franing HCX-446 es un componente
+                esencial diseñado para garantizar un flujo de combustible limpio
+                y libre de impurezas hacia el motor de su vehículo. Con una
+                construcción de alta calidad y tecnología avanzada, este filtro
+                proporciona una filtración eficiente y una protección óptima
+                para el sistema de combustible, manteniendo el motor en su mejor
+                rendimiento y prolongando su vida útil.
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="5"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="lubricantes container">
+      <div class="lubricantes-2">
+        <h2>
+          Aciete <br />
+          de carro
+        </h2>
+      </div>
+      <div class="lubricantes-1">
+        <h3>Valvoline</h3>
+        <hr />
+        <p>Lubricantes</p>
+      </div>
+    </section>
+
+    <section class="elementos container" id="lista-2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3 class="c1">Aceite Valvoline para motos 1/4</h3>
+              <p class="precio">$4</p>
+              <img src="../imagenes/AceiteValvoline14.jpg" alt="" />
+              <p class="c2">
+                El Aceite Valvoline para Motos 1/4 es un lubricante de alto
+                rendimiento especialmente formulado para proporcionar una
+                protección excepcional y un funcionamiento óptimo en motores de
+                motocicletas. Este producto representa la excelencia en
+                lubricación y ha sido diseñado para satisfacer las demandas
+                únicas de los motores de motos, garantizando un rendimiento
+                suave, una potencia confiable y una durabilidad prolongada.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="6"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3 class="c1">Liquido de frenos 1 litro</h3>
+              <p class="precio">$10</p>
+              <img src="../imagenes/LiquidoFreno1Litro.jpg" alt="" />
+              <p class="c2">
+                El Líquido de Frenos de 1 litro es un fluido especializado
+                diseñado para el sistema de frenos de vehículos, motocicletas y
+                otros equipos que requieren un frenado seguro y eficiente. Este
+                producto es esencial para mantener la integridad y el
+                rendimiento óptimo del sistema de frenado, proporcionando
+                confianza al conductor y seguridad para todos los
+                ocupantes del vehículo.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="7"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3 class="c1">Liquido de frenos</h3>
+              <p class="precio">$4</p>
+              <img src="../imagenes/LiquidoFre.jpg" alt="" />
+              <p class="c2">
+                El Líquido de Frenos es un fluido esencial para el correcto
+                funcionamiento del sistema de frenado de vehículos, motocicletas
+                y otros equipos con frenos hidráulicos. Este producto juega un
+                papel crucial al transmitir la fuerza desde el pedal de freno
+                hacia los cilindros y calibradores, permitiendo un frenado
+                efectivo y seguro. Su uso adecuado asegura un rendimiento óptimo
+                del sistema de frenado, brindando confianza y seguridad al
+                conductor y a los pasajeros.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="8"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3 class="c1">Aceite Castrol para motos 1/4</h3>
+              <p class="precio">$5</p>
+              <img src="../imagenes/LubricanteUbx.jpg" alt="" />
+              <p class="c2">
+                El Aceite Castrol para Motos 1/4 es un lubricante de alto
+                rendimiento especialmente diseñado para satisfacer las exigentes
+                necesidades de los motores de motocicletas. Con la calidad
+                reconocida de la marca Castrol, este aceite proporciona una
+                protección óptima y un rendimiento confiable, asegurando una
+                experiencia de conducción suave y segura para los amantes
+                de las dos ruedas.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="9"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="elemento">
+              <h3 class="c1">AcieteCastrol</h3>
+              <p class="precio">$30</p>
+              <img src="../imagenes/LubricanteValvoline.jpg" alt="" />
+              <p class="c2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                maiores ipsa quam nam aspernatur facilis! Eveniet at in aperiam
+                corrupti culpa nesciunt, ratione voluptate dolorum blanditiis ut
+                amet, architecto laboriosam.
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="10"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="lubricantes container">
+      <div class="lubricantes-1">
+        <hr />
+        <p>Contacto</p>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="links">
+        <div class="link">
+          <h3>Redes</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nostrum
+            quasi veniam? Accusantium rem quod neque, minus quis dolorem
+            perspiciatis sunt? Placeat a aliquam iusto quia perferendis
+            reprehenderit excepturi tempora.
+          </p>
+          <div class="socials-2">
+            <img src="../" alt="" />
+            <img src="../" alt="" />
+            <img src="../" alt="" />
+            <img src="../" alt="" />
+          </div>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem 1</a></li>
+            <li><a href="#">Lorem 2</a></li>
+            <li><a href="#">Lorem 3</a></li>
+            <li><a href="#">Lorem 4</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem 1</a></li>
+            <li><a href="#">Lorem 2</a></li>
+            <li><a href="#">Lorem 3</a></li>
+            <li><a href="#">Lorem 4</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <form>
+            <input type="text" placeholder="Nombre" class="inp" />
+            <input type="email" placeholder="Email" class="inp" />
+            <textarea class="inp"></textarea>
+            <input class="btn-4" type="submit" value="Enviar" />
+          </form>
         </div>
       </div>
+    </footer>
 
-      <div class="link">
-        <h3>Lorem</h3>
-        <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem 1</a></li>
-          <li><a href="#">Lorem 2</a></li>
-          <li><a href="#">Lorem 3</a></li>
-          <li><a href="#">Lorem 4</a></li>
-        </ul>
-      </div>
-
-      <div class="link">
-        <h3>Lorem</h3>
-        <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem 1</a></li>
-          <li><a href="#">Lorem 2</a></li>
-          <li><a href="#">Lorem 3</a></li>
-          <li><a href="#">Lorem 4</a></li>
-        </ul>
-      </div>
-
-      <div class="link">
-        <h3>Lorem</h3>
-        <form>
-          <input type="text" placeholder="Nombre" class="inp" />
-          <input type="email" placeholder="Email" class="inp" />
-          <textarea class="inp"></textarea>
-          <input class="btn-4" type="submit" value="Enviar" />
-        </form>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../js/lubricante.js"></script>
-  <script src="../js/estadosesion.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/lubricante.js"></script>
+    <script src="../js/estadosesion.js"></script>
+  </body>
 </html>
