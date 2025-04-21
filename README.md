@@ -1,56 +1,57 @@
-# 🚗 Lubricante Reyes - Sistema de Inventario y Gestión
+# 🚗 Lubricante Reyes - Inventory and Management System
 
-Este proyecto consiste en el desarrollo de un sistema web para la **Lubricadora Reyes**, ubicada en **Cayambe**, especializada en productos automotrices y alimentarios.  
-Fue desarrollado como una práctica académica utilizando **PHP**, **HTML**, **CSS** y **MySQL**, implementado en un entorno local con **XAMPP**.
+This project consists of the development of a web system for **Lubricadora Reyes**, located in **Cayambe**, specialized in automotive and food products.  
+It was developed as an academic practice using **PHP**, **HTML**, **CSS** and **MySQL**, implemented in a local environment with **XAMPP**.
 
-## 📋 Descripción General
+## 📋 Overview
 
-La **Lubricadora Reyes** gestionaba previamente su inventario y promociones a través de su página de **Facebook**.  
-Para mejorar su operatividad, se desarrolló un sistema web propio que permite administrar productos, promociones y stock de manera centralizada.  
-Durante el proyecto se recolectaron y organizaron aproximadamente **50 imágenes** de su catálogo de productos (lubricantes, aceites, aditivos, entre otros), integrándolas en la nueva plataforma.
+The **Lubricadora Reyes** previously managed its inventory and promotions through its **Facebook** page.  
+To improve its operability, a proprietary web system was developed to centrally manage products, promotions and stock.  
+During the project, approximately **50 images** of their product catalog (lubricants, oils, additives, among others) were collected and organized and integrated into the new platform.
 
-El sistema implementa operaciones **CRUD** (Crear, Leer, Actualizar y Eliminar) completamente funcionales sobre la base de datos.
+The system implements fully functional **CRUD** (Create, Read, Update and Delete) operations on the database.
 
-## 👤 Roles de Usuario
+## 👤 User Roles
 
-- **Administrador:**  
-  - Gestión de productos, categorías, imágenes y usuarios.  
-  - Control total sobre el inventario y la administración del sistema.
+- **Administrator:** 
+ - Management of products, categories, images and users.  
+  - Full control over inventory and system administration.
 
-- **Usuario:**  
-  - Consulta y visualización de productos disponibles.  
-  - Acceso a información de promociones vigentes.
+- User:** 
+ - Consultation and visualization of available products.  
+  - Access to information on current promotions.
 
-## 🚀 Tecnologías Utilizadas
-- **HTML5**  
-- **CSS3**  
-- **PHP 7+**  
-- **MySQL**  
-- **XAMPP** (Servidor local)
+## 🚀 Technologies Used
+- **HTML5** 
+- **CSS3** 
+- **PHP 7+** 
+- **MySQL** 
+- **XAMPP** (Local server)
 
-## 🎯 Funcionalidades Principales
-- Registro, visualización, actualización y eliminación de productos (CRUD completo).
-- Gestión de usuarios y asignación de roles.
-- Carga y administración de imágenes de productos.
-- Conexión segura a base de datos MySQL.
-- Interfaz intuitiva, sencilla y adaptable.
+## 🎯 Main functionalities
+- Registration, display, update and deletion of products (complete CRUD).
+- User management and role assignment.
+- Upload and administration of product images.
+- Secure connection to MySQL database.
+- Intuitive, simple and customizable interface.
 
-## 🛠️ Requisitos para la Ejecución
-- **XAMPP** instalado y configurado en el equipo.
-- Navegador web actualizado (Chrome, Firefox, etc.)
-- Base de datos MySQL importada desde phpMyAdmin.
-- Configuración correcta de credenciales de conexión en el archivo PHP.
+## 🛠️ Requirements for Implementation
+- **XAMPP** installed and configured on the computer.
+- Updated web browser (Chrome, Firefox, etc.)
+- MySQL database imported from phpMyAdmin.
+- Correct configuration of connection credentials in the PHP file.
 
-## 📂 Uso del Proyecto
-1. Clonar o descargar este repositorio.
-2. Copiar el proyecto en la carpeta `htdocs` de XAMPP.
-3. Crear la base de datos en MySQL utilizando phpMyAdmin.
-4. Importar el archivo `.sql` proporcionado.
-5. Configurar los datos de conexión en el archivo PHP.
-6. Iniciar los servicios de **Apache** y **MySQL** en XAMPP.
-7. Acceder al sistema desde el navegador usando:  
-   `http://localhost/nombre_del_proyecto/`
+## 📂 Using the Project
+1. Clone or download this repository.
+2. Copy the project to the `htdocs` folder of XAMPP.
+3. Create the database in MySQL using phpMyAdmin.
+4. Import the `.sql` file provided.
+5. Configure the connection data in the PHP file.
+6. Start the **Apache** and **MySQL** services in XAMPP.
+7. Access the system from the browser using: 
+ `http://localhost/nombre_del_proyecto/`
 
-## 📜 Notas
-Este sistema fue desarrollado con fines educativos y como una propuesta de modernización para negocios que gestionan sus operaciones a través de redes sociales, facilitando su transición hacia una plataforma interna más organizada y profesional.
+## 📜 Notes
+This system was developed for educational purposes and as a modernization proposal for businesses that manage their operations through social networks, facilitating their transition to a more organized and professional internal platform.
+
 
